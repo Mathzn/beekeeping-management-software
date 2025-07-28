@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harvest Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-heading">
+    <h1>Harvest Dashboard</h1>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+    <ul class="menu" id="menu">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="apiary.html">Apiary</a></li>
+      <li><a href="task.html">Task</a></li>
+      <li><a href="treatment.html">Treatment</a></li>
+      <li><a href="harvest.html">Harvest</a></li>
+      <li><a href="financial.html">Financial</a></li>
+    </ul>
+  </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Harvest Entry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Add Harvest Record</h2>
+    <form method="POST" action="harvest.php">
+      <label for="date">Date:</label>
+      <input type="date" name="date" id="date" required />
+
+      <label for="product">Product:</label>
+      <input type="text" name="product" id="product" required />
+
+      <label for="quantity">Quantity (kg):</label>
+      <input type="number" name="quantity" id="quantity" step="0.01" required />
+
+      <label for="person">Harvested By:</label>
+      <input type="text" name="person" id="person" required />
+
+      <div style="text-align:center; margin-top:1em;">
+        <button type="submit">Save Harvest</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('toggle-btn').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.toggle('collapsed');
+    });
+  </script>
+
+</body>
+</html>

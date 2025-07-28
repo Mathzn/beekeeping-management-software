@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-heading">
+    <h1>Task Management</h1>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+    <ul class="menu">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="apiary.html">Apiary</a></li>
+      <li><a href="task.html">Task</a></li>
+      <li><a href="treatment.html">Treatment</a></li>
+      <li><a href="harvest.html">Harvest</a></li>
+      <li><a href="financial.html">Financial</a></li>
+    </ul>
+  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Hive Task</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="Treatments" class="panel">
+<div class="card">
+    <form action="task.php" method="POST">
+      <label>Task Name:</label>
+      <input type="text" name="task_name" required /><br><br>
+
+      <label>Description:</label>
+      <textarea name="description" rows="4" required></textarea><br><br>
+
+      <label>Assigned Hive:</label>
+      <input type="text" name="hive_id" required /><br><br>
+
+      <label>Task Date:</label>
+      <input type="date" name="task_date" required /><br><br>
+
+      <label>Priority:</label>
+      <select name="priority">
+        <option value="Low">Low</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="High">High</option>
+      </select><br><br>
+
+      <button type="submit">Save Task</button>
+    </form>
+  </div>
+</body>
+</html>
+
+</body>
+</html>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("toggle-btn").addEventListener("click", () => {
+      document.getElementById("sidebar").classList.toggle("collapsed");
+    });
+  </script>
+</body>
+</html>

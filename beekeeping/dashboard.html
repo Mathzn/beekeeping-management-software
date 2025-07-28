@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beekeeping Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+      <!-- Top Heading -->
+  <header class="top-heading">
+    <h1>Welcome to Beekeeping Management</h1>
+  </header>
+
+
+  <div class="sidebar" id="sidebar">
+    <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+    <ul class="menu" id="menu">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="apiary.html">Apiary</a></li>
+      <li><a href="task.html">Task</a></li>
+      <li><a href="treatment.html">Treatment</a></li>
+      <li><a href="harvest.html">Harvest</a></li>
+      <li><a href="financial.html">Financial</a></li>
+    </ul>
+  </div>
+  <script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+    });
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dashboard-item" onclick="window.location.href = 'apiary.html'">
+      <img src="apiaries_icon.jpg" alt="Apiaries Icon" class="dashboard-icon">
+      <h3>Apiaries</h3>
+    </div>
+    <div class="dashboard-item" onclick="window.location.href = 'task.html'">
+      <img src="task_icon.jpg" alt="Tasks Icon" class="dashboard-icon">
+      <h3>Tasks</h3>
+    </div>
+    <div class="dashboard-item" onclick="window.location.href = 'financial.html'">
+      <img src="financial_icon.jpg" alt="Financial Icon" class="dashboard-icon">
+      <h3>Financial</h3>
+    </div>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Honey Yield Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="yield-app">
+    <h1>Honey Yield Calculator</h1>
+
+    <label for="frameCount">Number of full honey frames:</label>
+    <input type="number" id="frameCount" min="0" placeholder="e.g., 8" />
+
+    <label for="avgPerFrame">Average honey per frame (kg):</label>
+    <input type="number" id="avgPerFrame" min="0" step="0.1" placeholder="e.g., 2.5" />
+
+    <button onclick="calculateYield()">Estimate Yield</button>
+
+    <div class="result" id="resultDisplay"></div>
+  </div>
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Snapshot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <input type="text" id="locationInput" placeholder="Enter location (e.g., Kiambu)" />
+  <button onclick="getWeather()">Get Weather</button>
+
+  <div id="loading">Waiting for input...</div>
+
+  <div id="resultBox" style="display:none;">
+    <h3>Weather at <span id="resultTime"></span></h3>
+    <p><strong>Temperature:</strong> <span id="temp"></span> °C</p>
+    <p><strong>Humidity:</strong> <span id="humidity"></span> %</p>
+    <p><strong>Dew Point:</strong> <span id="dew"></span> °C</p>
+    <p><strong>Feels Like:</strong> <span id="apparent"></span> °C</p>
+    <p><strong>Wind Speed:</strong> <span id="wind"></span> km/h</p>
+    <p><strong>Precipitation:</strong> <span id="rain"></span> mm</p>
+  </div>
+  <script src="script.js"></script>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logout Button</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="logout-container">
+    <form action="logout.php" method="post">
+      <button type="submit" class="logout-button">Log Out</button>
+    </form>
+  </div>
+</body>
+</html>
+
+</body>
+</html>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  <script src="script.js"></script>
+</body>
+</html>

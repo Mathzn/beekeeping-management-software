@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beekeeping Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Heading -->
+  <header class="top-heading">
+    <h1>APIARY DASHBOARD</h1>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+    <ul class="menu" id="menu">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="apiary.html">Apiary</a></li>
+      <li><a href="task.html">Task</a></li>
+      <li><a href="treatment.html">Treatment</a></li>
+      <li><a href="harvest.html">Harvest</a></li>
+      <li><a href="financial.html">Financial</a></li>
+    </ul>
+  </div> 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Apiary | Beekeeping Software</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="card">
+      <h2>Add Apiary</h2>
+      <form action="apiary.php" method="POST">
+         <label>
+          Apiary Name:
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          City:
+          <input type="text" name="city" required />
+        </label>
+        <label>
+          Country:
+          <input type="text" name="country" required />
+        </label>
+        <label>
+          Latitude:
+          <input type="number" name="latitude" step="any" />
+        </label>
+        <label>
+          Longitude:
+          <input type="number" name="longitude" step="any" />
+        </label>
+        <label>
+          Hive Count:
+          <input type="number" name="hives" min="0" />
+        </label>
+        <button type="submit">Save</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+    });
+  </script>
+</body>
+</html>

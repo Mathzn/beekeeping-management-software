@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Financial Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-heading">
+    <h1>Financial Summary</h1>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+    <ul class="menu">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="apiary.html">Apiary</a></li>
+      <li><a href="task.html">Task</a></li>
+      <li><a href="treatment.html">Treatment</a></li>
+      <li><a href="harvest.html">Harvest</a></li>
+      <li><a href="financial.html">Financial</a></li>
+    </ul>
+  </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Beekeeping Financial Entry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Add Financial Record</h2>
+    <form method="POST" action="financial.php">
+      <label for="transaction_date">Date:</label>
+      <input type="date" name="transaction_date" id="transaction_date" required />
+
+      <label for="description">Description:</label>
+      <input type="text" name="description" id="description" required />
+
+      <label for="type">Type:</label>
+      <select name="type" id="type" required>
+        <option value="">-- Select Type --</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <label for="amount">Amount (KSh):</label>
+      <input type="number" name="amount" id="amount" step="0.01" required />
+
+      <label for="notes">Notes (optional):</label>
+      <textarea name="notes" id="notes" rows="3" cols="40"></textarea>
+
+      <div style="text-align:center; margin-top:1em;">
+        <button type="submit">Save Record</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+  </div>
+</body>
+</html>
+
+  <script>
+    document.getElementById("toggle-btn").addEventListener("click", () => {
+      document.getElementById("sidebar").classList.toggle("collapsed");
+    });
+  </script>
+</body>
+</html>
